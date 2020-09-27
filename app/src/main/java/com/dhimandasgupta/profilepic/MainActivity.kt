@@ -124,10 +124,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onGalleryClicked() {
-        when {
+        requestPickImage()
+
+        /*when {
             isStoragePermissionGranted() -> requestPickImage()
             else -> requestStoragePermission()
-        }
+        }*/
     }
 
     private fun onCameraClicked() {
